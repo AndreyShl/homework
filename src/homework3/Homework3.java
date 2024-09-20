@@ -27,7 +27,10 @@ public class Homework3 {
         int secondNumEven = ((Num / 10) % 10) ;
         int thirdNumEven = (Num % 10) ;
         int degreePar = 0;
-        if (isOdd(firstNumEven)) {
+        if (Num>999){
+            System.out.println("please write correct number");
+        }
+        else if (isOdd(firstNumEven)) {
             degreePar++;
             if (isOdd(secondNumEven)) {
                 degreePar++;
@@ -43,7 +46,8 @@ public class Homework3 {
             }
         } else if (isOdd(thirdNumEven)) {
             degreePar++;
-        } else System.out.println("degreePar is:" + degreePar);
+        }
+        else System.out.println("degreePar is:" + degreePar);
         System.out.println("degreePar is:"+degreePar);
 
 
@@ -107,7 +111,9 @@ public class Homework3 {
     }
 
     private static boolean checkTriangle(int firstSideTriang, int secondSideTriang, int thirtSideTriang) {
-        return firstSideTriang < secondSideTriang + thirtSideTriang && secondSideTriang < firstSideTriang + thirtSideTriang && thirtSideTriang < firstSideTriang + secondSideTriang;
+        return firstSideTriang < secondSideTriang + thirtSideTriang
+                && secondSideTriang < firstSideTriang + thirtSideTriang
+                && thirtSideTriang < firstSideTriang + secondSideTriang;
     }
 
 
@@ -126,5 +132,8 @@ public class Homework3 {
     private static boolean isOdd(int number) {
         return number % 2 == 0;
     }
+//    private static int splitNum(int number){
+//
+//    }
 
 }
