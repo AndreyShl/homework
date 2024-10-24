@@ -4,13 +4,15 @@ package homeworkOOP.airLine;
 //                Создать авиакомпанию. Посчитать общую вместимость и грузоподъемность. Найти самолет в компании,
 //        соответствующий заданному диапазону параметров.
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
         AirVehicle plain = new Plain(220,11,"plain");
         AirVehicle plain4 = new Plain(11,11,"plain4");
         AirVehicle plain41 = new Plain(20,11,"plain41");
-        AirVehicle plain411 = new Plain(21,12,"plain411");
+        AirVehicle plain411 = new Plain(21,11,"plain411");
         AirVehicle plain4112 = new Plain(21,12,"plain4112");
         AirVehicle plain4113 = new Plain(21,12,"plain4113");
 
@@ -24,7 +26,7 @@ public class Main {
 
         System.out.println("Total seats: "+airport.getTotalSeats());
         System.out.println("Total Capacity: "+airport.getTotalCapacityUP());
-        System.out.println("Find equal Plain:"+airport.findEqualPlane(21,12));
+        System.out.println("Find equal Plain:"+ Arrays.toString(airport.findEqualPlane(21,12)));
 
 
 

@@ -7,8 +7,6 @@ public class Money {
 // * Учесть кол-во рублей и копеек при выводе на экран: рубля/рублей копейки/копеек
 
     private final int rub;
-    public String rubIndex;
-    public String sentIndex;
     private final int cent;
 
     public Money(int rub, int sent) {
@@ -17,6 +15,7 @@ public class Money {
     }
 
     private String checkEndRub() {
+        String rubIndex;
         if (rub % 10 >= 2 && rub % 10 <= 4) {
             rubIndex = " рубля ";
         } else if (rub % 10 == 1) {
@@ -28,6 +27,7 @@ public class Money {
     }
 
     private String checkEndSent() {
+        String sentIndex;
         if (cent % 10 >= 2 && cent % 10 <= 4) {
             sentIndex = " копейки ";
         } else if (cent % 10 == 1) {

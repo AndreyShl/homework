@@ -30,7 +30,7 @@ public class Airport {
         return totalCapacityUP;
     }
 
-    public String findEqualPlane(int seat, int capacityUP) {
+    public AirVehicle[] findEqualPlane(int seat, int capacityUP) {
 
         int howManyEqualsPlains = 0;
         for (AirVehicle nowPlaneEqualOrNot : airVehicles) {
@@ -50,6 +50,6 @@ public class Airport {
             }
         }
 
-        return Arrays.toString(arrayPlanes);
+        return arrayPlanes;
     }
 }
