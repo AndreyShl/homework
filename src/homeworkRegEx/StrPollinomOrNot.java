@@ -22,7 +22,7 @@ public class StrPollinomOrNot {
         String str2=stringBuilderClone.substring(0);
 
         if (str1.equals(str2)) {
-            System.out.println("строка является полиндроном");
+            System.out.println("строка является полиндроном ");
 
         } else {
             System.out.println("строка не является полинроном");

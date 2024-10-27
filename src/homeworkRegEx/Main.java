@@ -55,7 +55,7 @@ public class Main {
 
         //TASK4
         String stringPatternYears = "19[7-8]+[7-9|0-2]";
-        String valueYears = "1975 1976 1977 1978 1979 1980 1981 1982 1983 1984";
+        String valueYears = "1945 1975 1976 1977 1978 1979 1980 1981 1982 1983 1984";
         Pattern patternYears = Pattern.compile(stringPatternYears);
         Matcher matcherYears = patternYears.matcher(valueYears);
         while (matcherYears.find()) {
@@ -72,9 +72,9 @@ public class Main {
         Pattern patternIP = Pattern.compile(stringPatternIP);
         Matcher matcherIP = patternIP.matcher(value2);
         if (matcherIP.find()) {
-            System.out.println(value2 + " является IP адресом");
+            System.out.println(value2 + " является IP адресом ");
         } else if (!matcherIP.find()) {
-            System.out.println(value2 + "не является IP адресом");
+            System.out.println(value2 + "не является IP адресом ");
         }
 
 
