@@ -1,15 +1,11 @@
 package homeworkHashMap.CallBook;
 
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
         Map<String, List<Integer>> callBook = new HashMap<>();
-
         callBook.put("Вадим", new ArrayList<>());
         callBook.put("Кирилл", new ArrayList<>());
         callBook.put("Андрей", new ArrayList<>());
@@ -20,6 +16,7 @@ public class Main {
         callBook.get("Кирилл").add(25874);
         callBook.get("Андрей").add(112255);
         callBook.get("Андрей").add(223345);
+
 
 
         for (Map.Entry<String, List<Integer>> entry : callBook.entrySet()) {
