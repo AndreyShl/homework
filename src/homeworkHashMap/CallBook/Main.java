@@ -5,28 +5,22 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Map<String, List<Integer>> callBook = new HashMap<>();
-        callBook.put("Вадим", new ArrayList<>());
-        callBook.put("Кирилл", new ArrayList<>());
-        callBook.put("Андрей", new ArrayList<>());
-        callBook.get("Вадим").add(37593829);
-        callBook.get("Вадим").add(123);
-        callBook.get("Вадим").add(345);
-        callBook.get("Кирилл").add(1569);
-        callBook.get("Кирилл").add(25874);
-        callBook.get("Андрей").add(112255);
-        callBook.get("Андрей").add(223345);
+
+
+    PhoneBook phoneBook =new PhoneBook();
+
+    phoneBook.addContact("андрей",1234);
+    phoneBook.addContact("андрей",2222);
+    phoneBook.addContact("андрей",3333);
+    phoneBook.addContact("Вадим",4444);
+    phoneBook.addContact("Вадим",1111);
+    phoneBook.printContacts();
 
 
 
-        for (Map.Entry<String, List<Integer>> entry : callBook.entrySet()) {
-
-            String name = entry.getKey();
-            List<Integer> numbers = entry.getValue();
-            System.out.println(name+": "+numbers);
 
 
-        }
+
 
 
     }
